@@ -20,4 +20,8 @@ func main() {
 
 	fmt.Println("Este es mi mapa:", miMapa)
 	fmt.Println("El valor de la clave Colombia es:", miMapa["Colombia"])
+	miMapa["Mexico"] = "Ciudad de Mexico" //agregamos un elemento al mapa
+	fmt.Println("Mapa despues de agregar un elemento:", miMapa)
+	delete(miMapa, "Chile") //eliminamos un elemento del mapa
+	fmt.Println("Mapa despues de eliminar un elemento:", miMapa)
 }
